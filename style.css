@@ -9,8 +9,13 @@ body {
   text-transform: capitalize;
 }
 .container {
+  width: 95%;
+  height: 156vh;
   position: relative;
+  margin: 2rem auto;
 }
+
+/* topbar */
 
 .top {
   background-color: #fff;
@@ -24,17 +29,11 @@ body {
   width: 130px;
   border-right: 2px solid grey;
 }
-.container {
-  width: 95%;
-  height: 156vh;
-
-  margin: 2rem auto;
-}
+/* main */
 .main {
   display: flex;
   justify-content: space-evenly;
   background-color: rgba(254, 237, 146, 1);
-
   height: 60%;
 }
 .main-info {
@@ -85,6 +84,7 @@ body {
 .main-terms {
   margin-top: 1rem;
 }
+/* customer */
 .customer {
   margin-top: 2rem;
   background-color: #fff;
@@ -126,13 +126,15 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 500px)  and (min-height:400px){
+/* media query  */
+@media screen and (max-width: 500px) and (min-height: 400px) {
   .main-info {
     width: 100%;
   }
   .main-img {
     display: none;
   }
+  /* cusomer media query */
   .customer-info {
     display: flex;
     flex-direction: column-reverse;
